@@ -100,6 +100,13 @@
             span.textContent = newTask.trim(); // Set the new task text
         }
     }
+
+    // Function to remove a task from the to-do list
+    function removeTask(task){
+        const ul = document.getElementById("todoList"); // Get the list container
+        ul.removeChild(task); // Remove the specified task element
+    }
+    
     </script>
 </body>
 </html>
